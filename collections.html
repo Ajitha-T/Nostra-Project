@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra | Collections</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="offer-bar">Sign Up and GET 20% OFF for your first Order <button id="offerClose"
+            aria-label="Close">×</button></div>
+    <header class="navbar">
+        <a class="logo" href="index.html">Nostra</a>
+        <nav class="desktop-nav">
+            <a href="index.html">Home</a><a class="active" href="collections.html">Collections</a><a
+                href="contact.html">Contact</a>
+        </nav>
+        <button class="menu-btn" id="menuBtn">☰</button>
+    </header>
+    <div class="mobile-menu" id="mobileMenu"><button class="close-menu" id="closeMenu">×</button><a
+            href="index.html">Home</a><a href="collections.html">Collections</a><a href="contact.html">Contact</a></div>
+
+    <main>
+        <section class="page-banner">
+            <h1>Our Collections</h1>
+            <p>Find your next favourite style.</p>
+        </section>
+        <section class="collections-layout section">
+            <aside class="filters">
+                <h3>Filter</h3>
+                <label><input type="checkbox" class="filter-check" value="men"> Men</label>
+                <label><input type="checkbox" class="filter-check" value="women"> Women</label>
+                <label><input type="checkbox" class="filter-check" value="casual"> Casual</label>
+                <label><input type="checkbox" class="filter-check" value="formal"> Formal</label>
+                <label><input type="checkbox" class="filter-check" value="new"> New Arrival</label>
+                <button id="clearFilters" class="clear-btn">Clear Filters</button>
+            </aside>
+            <div class="collection-main">
+                <div class="search-box"><input id="searchInput" type="search"
+                        placeholder="Search products..."><span>⌕</span></div>
+                <p class="result-count" id="resultCount"></p>
+                <div class="product-grid" id="productGrid">
+                    <article class="product-card" data-name="Classic White Shirt" data-category="men casual new"><img
+                            src="https://images.unsplash.com/photo-1603252110481-7ba873bf42ab?auto=format&fit=crop&w=700&q=80"
+                            alt="Classic White Shirt">
+                        <div><span>New</span>
+                            <h3>Classic White Shirt</h3>
+                            <p>Men • Casual</p><strong>₹1,499</strong>
+                        </div>
+                    </article>
+                    <article class="product-card" data-name="Elegant Black Dress" data-category="women formal"><img
+                            src="images/image3.avif" alt="Maxi Dress">
+                        <div><span>Formal</span>
+                            <h3>Maxi Dress</h3>
+                            <p>Women • Formal</p><strong>₹2,499</strong>
+                        </div>
+                    </article>
+                    <article class="product-card" data-name="Relaxed Denim Jacket" data-category="men casual"><img
+                            src="https://images.unsplash.com/photo-1495105787522-5334e3ffa0ef?auto=format&fit=crop&w=700&q=80"
+                            alt="Denim Jacket">
+                        <div><span>Casual</span>
+                            <h3>Relaxed Denim Jacket</h3>
+                            <p>Men • Casual</p><strong>₹2,799</strong>
+                        </div>
+                    </article>
+                    <article class="product-card" data-name="Summer Floral Dress" data-category="women casual new"><img
+                            src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=700&q=80"
+                            alt="Floral Dress">
+                        <div><span>New</span>
+                            <h3>Summer Floral Dress</h3>
+                            <p>Women • Casual</p><strong>₹1,899</strong>
+                        </div>
+                    </article>
+                    <article class="product-card" data-name="Classic Blazer" data-category="men formal"><img
+                            src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=700&q=80"
+                            alt="Classic Blazer">
+                        <div><span>Formal</span>
+                            <h3>Classic Blazer</h3>
+                            <p>Men • Formal</p><strong>₹3,499</strong>
+                        </div>
+                    </article>
+                    <article class="product-card" data-name="Oversized Hoodie" data-category="women casual new"><img
+                            src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=700&q=80"
+                            alt="Oversized Hoodie">
+                        <div><span>New</span>
+                            <h3>Oversized Hoodie</h3>
+                            <p>Women • Casual</p><strong>₹1,699</strong>
+                        </div>
+                    </article>
+                    <article class="product-card" data-name="Straight Fit Jeans" data-category="men casual"><img
+                            src="https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=700&q=80"
+                            alt="Jeans">
+                        <div><span>Casual</span>
+                            <h3>Straight Fit Jeans</h3>
+                            <p>Men • Casual</p><strong>₹1,999</strong>
+                        </div>
+                    </article>
+                    <article class="product-card" data-name="Satin Evening Dress" data-category="women formal"><img
+                            src="https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&w=700&q=80"
+                            alt="Evening Dress">
+                        <div><span>Formal</span>
+                            <h3>Satin Evening Dress</h3>
+                            <p>Women • Formal</p><strong>₹2,999</strong>
+                        </div>
+                    </article>
+                </div>
+                <p class="no-results" id="noResults">No products found.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div><a class="logo footer-logo" href="index.html">Nostra</a>
+            <p>Simple fashion. Better style. Everyday essentials.</p>
+        </div>
+        <div class="footer-links"><a href="index.html">Home</a><a href="collections.html">Collections</a><a
+                href="contact.html">Contact</a></div>
+        <p class="copyright">© 2026 Nostra. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
